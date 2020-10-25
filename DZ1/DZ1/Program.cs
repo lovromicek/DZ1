@@ -7,6 +7,9 @@ namespace DZ1
     {
         static void Main(string[] args)
         {
+			/* Metoda GenerateRandomScore() nalazi se u main-u jer ako ju stavim u klasu Episode, VS izbacuje pogrešku 
+		    "The name GenerateRandomScore does not exist in the current context" što nisam siguran zašto radi i kako to ispraviti.
+			Program napisan ovako ispisuje ispravno rješenje. */
 			double GenerateRandomScore()
 			{
 				double rnd;
