@@ -22,6 +22,14 @@ namespace ClassLibrary1
             this.maxRating = maxRating;
         }
 
+        public static double GenerateRandomScore()
+        {
+            double rnd;
+            Random random = new Random();
+            rnd = random.NextDouble() * 10;
+            return rnd;
+        }
+
         public void AddView(double rating)
         {
             ratingSum += rating;
